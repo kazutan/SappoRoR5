@@ -156,6 +156,7 @@ datatable(iris,filter = 'top')
 ```
 
 ---
+
 - フィルターにfactor型があると、選択することが可能
     - ただし、この場合はオプションでちょっと指定が必要
 ```{r filter2}
@@ -192,12 +193,14 @@ datatable(iris, options = list(
     - いくつかわかりやすいものを紹介
 
 ---
+
 - 列を(あとから)並べ替えれるようにすることが可能
 ```{r extention1}
 datatable(head(iris), extensions = 'ColReorder', options = list(dom = 'Rlfrtip'))
 ```
 
 ---
+
 - 列移動をリアルタイムで出せます
 ```{r extention2}
 datatable(head(iris,4), extensions = 'ColReorder', options = list(
